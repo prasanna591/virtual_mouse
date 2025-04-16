@@ -63,7 +63,7 @@ while True:
             if pinch_distance < 0.05:
                 pyautogui.click()
 
-            # Pinch gesture for dragging
+            
             if pinch_distance < 0.05:
                 if not dragging:
                     pyautogui.mouseDown()
@@ -88,6 +88,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Release the webcam and close all OpenCV windows
+
 cap.release()
 cv2.destroyAllWindows()
